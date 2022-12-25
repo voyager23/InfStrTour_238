@@ -56,12 +56,18 @@ def wspaces(n_words):
 				
 		print(P)
 		print(len(P))
-	
-	
+		foo =[k for k in P.keys()]
+		foo = sorted(foo)
+		S=0
+		for k in foo:
+			S += P[k]
+		print(S)
+		
 		
 def main(args):
-	wspaces(96)
+	wspaces(80)
 	return 0
+	
 	
 if __name__ == '__main__':
     import sys
